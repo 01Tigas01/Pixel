@@ -1,112 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CTECHPLAY - Ativação de Cadastro" />
-  <title>Ativar Cadastro — CTECHPLAY</title>
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Meta Pixel Code -->
-  <script>
-    !(function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod
-          ? n.callMethod.apply(n, arguments)
-          : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = "2.0";
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-
-    fbq("init", "869418979101704");
-    fbq("track", "PageView");
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1795287501349497&ev=PageView&noscript=1" />
-  </noscript>
-  <!-- End Meta Pixel Code -->
-
-<!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '4340571279496215');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=4340571279496215&ev=PageView&noscript=1"/></noscript>
-<!-- End Meta Pixel Code -->
-
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+n.callMethod.apply(n,arguments):n.queue.push(arguments)}};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
+n.queue=[];
+t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4340571279496215');
+fbq('init', '869418979101704');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4340571279496215&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=869418979101704&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-</head>
-
-<body>
-  <main class="container">
-    <h1 class="title">ATIVAR CADASTRO</h1>
-
-    <div class="progress-bar">
-      <div class="progress-info">
-        <span>Complete sua assinatura</span>
-        <strong>79%</strong>
-      </div>
-      <div class="progress">
-        <div class="progress-fill" style="width: 79%">Quase lá</div>
-      </div>
-    </div>
-
-    <!-- Sem names (não envia dados pessoais ao pixel) -->
-    <form class="form" id="formAtivar" action="compra-confirmada.html" method="GET">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" placeholder="Digite seu nome e sobrenome" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="Digite seu melhor email" required />
-
-      <label for="whatsapp">WhatsApp:</label>
-      <input type="tel" id="whatsapp" placeholder="Digite seu WhatsApp" required />
-
-      <button type="submit" class="btn" id="btnContinuar">ATIVAR CADASTRO</button>
-    </form>
-  </main>
-
-  <script>
-    // dispara InitiateCheckout só quando o botão é clicado
-    document.getElementById("btnContinuar").addEventListener("click", function () {
-      fbq("track", "InitiateCheckout");
-    });
-  </script>
-
-</body>
-</html>
+429: Too Many Requests
+For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).

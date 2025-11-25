@@ -126,11 +126,17 @@
     fbq("init", "869418979101704");
     fbq("track", "PageView");
 
-    // Evento de compra com valor e moeda
+    // GERAR event_id único para desduplicação
+    const eventId = "PURCHASE_" + Date.now();
+
+    // Evento Purchase CORRIGIDO com event_id
     fbq("track", "Purchase", {
       value: 24.90,
-      currency: "BRL"
+      currency: "BRL",
+      event_id: eventId
     });
+
+    console.log("event_id enviado:", eventId);
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
@@ -156,4 +162,5 @@
     <p class="message">Retorne ao WhatsApp,<br>tudo completo ✅</p>
   </main>
 </body>
+
 </html>

@@ -7,6 +7,9 @@
   <title>Ativar Cadastro — CTECHPLAY</title>
   <link rel="stylesheet" href="styles.css" />
 
+  <!-- Facebook Domain Verification -->
+  <meta name="facebook-domain-verification" content="xnk4oqs8695uytslj0hzmrnivcjwzu" />
+
   <!-- Meta Pixel Code -->
   <script>
     !(function (f, b, e, v, n, t, s) {
@@ -35,7 +38,6 @@
     <img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=869418979101704&ev=PageView&noscript=1" />
   </noscript>
-  <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -52,7 +54,6 @@
       </div>
     </div>
 
-    <!-- Sem names (não envia dados pessoais ao pixel) -->
     <form class="form" id="formAtivar" action="compra-confirmada.html" method="GET">
       <label for="nome">Nome:</label>
       <input type="text" id="nome" placeholder="Digite seu nome e sobrenome" required />
@@ -68,7 +69,6 @@
   </main>
 
   <script>
-    // dispara InitiateCheckout só quando o botão é clicado
     document.getElementById("btnContinuar").addEventListener("click", function () {
       fbq("track", "InitiateCheckout");
     });

@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="CTECHPLAY - Ativação de Cadastro" />
   <title>Ativar Cadastro — CTECHPLAY</title>
-  <link rel="stylesheet" href="styles.css" />
 
   <!-- Meta Pixel Code -->
   <script>
@@ -30,47 +29,28 @@
       s.parentNode.insertBefore(t, s);
     })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
 
-    fbq("init", "1445853093570981");
+    fbq("init", "1700313718073372");
     fbq("track", "PageView");
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1445853093570981&ev=PageView&noscript=1" />
+      src="https://www.facebook.com/tr?id=1700313718073372&ev=PageView&noscript=1" />
   </noscript>
-  <!-- End Meta Pixel Code -->
 </head>
 
 <body>
   <main class="container">
-    <h1 class="title">ATIVAR CADASTRO</h1>
+    <h1>ATIVAR CADASTRO</h1>
 
-    <div class="progress-bar">
-      <div class="progress-info">
-        <span>Complete sua assinatura</span>
-        <strong>79%</strong>
-      </div>
-      <div class="progress">
-        <div class="progress-fill" style="width: 79%">Quase lá</div>
-      </div>
-    </div>
-
-    <!-- Sem names (não envia dados pessoais ao pixel) -->
-    <form class="form" id="formAtivar" action="compra-confirmada.html" method="GET">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" placeholder="Digite seu nome e sobrenome" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="Digite seu melhor email" required />
-
-      <label for="whatsapp">WhatsApp:</label>
-      <input type="tel" id="whatsapp" placeholder="Digite seu WhatsApp" required />
-
-      <button type="submit" class="btn" id="btnContinuar">ATIVAR CADASTRO</button>
+    <form action="compra-confirmada.html">
+      <input type="text" placeholder="Nome" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="WhatsApp" required />
+      <button type="submit" id="btnContinuar">ATIVAR CADASTRO</button>
     </form>
   </main>
 
   <script>
-    // dispara InitiateCheckout só quando o botão é clicado
     document.getElementById("btnContinuar").addEventListener("click", function () {
       fbq("track", "InitiateCheckout");
     });

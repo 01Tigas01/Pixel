@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro Ativo — CTECHPLAY</title>
+  <style>
+    body { background-color: #000; color: #fff; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; text-align: center; margin: 0; }
+    .container { width: 100%; max-width: 500px; padding: 20px; }
+    .title { color: #00ff40; font-size: 2rem; margin-bottom: 25px; }
+    .progress-bar { background-color: #222; border-radius: 30px; height: 22px; overflow: hidden; }
+    .progress-fill { background-color: #00ff40; height: 100%; width: 100%; color: #000; font-weight: bold; }
+    .message { font-size: 1.5rem; margin-top: 30px; }
+  </style>
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = [];
+      t = b.createElement(e); t.async = !0; t.src = v;
+      s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "1700313718073372");
+    fbq("track", "PageView");
+    const eventId = "PURCHASE_" + Date.now();
+    fbq("track", "Purchase", { value: 24.90, currency: "BRL", event_id: eventId });
+  </script>
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">CADASTRO ATIVO</h1>
+    <div class="progress-bar"><div class="progress-fill">100%</div></div>
+    <p class="message">Retorne ao WhatsApp,<br>tudo completo ✅</p>
+  </main>
+</body>
+</html>

@@ -2,20 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta name="facebook-domain-verification" content="xnk4oqs8695uys1i0hzmnrvcjnvwzu" />
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CTECHPLAY - Ativação de Cadastro" />
   <title>Ativar Cadastro — CTECHPLAY</title>
 
-  <!-- Meta Pixel Code -->
+  <!-- Meta Pixel -->
   <script>
     !(function (f, b, e, v, n, t, s) {
       if (f.fbq) return;
       n = f.fbq = function () {
-        n.callMethod
-          ? n.callMethod.apply(n, arguments)
-          : n.queue.push(arguments);
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
       };
       if (!f._fbq) f._fbq = n;
       n.push = n;
@@ -32,29 +28,27 @@
     fbq("init", "1700313718073372");
     fbq("track", "PageView");
   </script>
+
   <noscript>
     <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1700313718073372&ev=PageView&noscript=1" />
+    src="https://www.facebook.com/tr?id=1700313718073372&ev=PageView&noscript=1"/>
   </noscript>
 </head>
 
 <body>
-  <main class="container">
-    <h1>ATIVAR CADASTRO</h1>
+  <h1>ATIVAR CADASTRO</h1>
 
-    <form action="compra-confirmada.html">
-      <input type="text" placeholder="Nome" required />
-      <input type="email" placeholder="Email" required />
-      <input type="tel" placeholder="WhatsApp" required />
-      <button type="submit" id="btnContinuar">ATIVAR CADASTRO</button>
-    </form>
-  </main>
+  <form action="compra-confirmada.html">
+    <input type="text" placeholder="Nome" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="WhatsApp" required>
+    <button id="btn">ATIVAR CADASTRO</button>
+  </form>
 
   <script>
-    document.getElementById("btnContinuar").addEventListener("click", function () {
+    document.getElementById("btn").addEventListener("click", function () {
       fbq("track", "InitiateCheckout");
     });
   </script>
-
 </body>
 </html>

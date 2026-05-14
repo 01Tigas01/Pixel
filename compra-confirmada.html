@@ -2,15 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cadastro Ativo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro Ativo — CTECHPLAY</title>
 
-  <!-- Meta Pixel -->
   <script>
     !(function (f, b, e, v, n, t, s) {
       if (f.fbq) return;
       n = f.fbq = function () {
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
       };
       if (!f._fbq) f._fbq = n;
       n.push = n;
@@ -24,24 +25,21 @@
       s.parentNode.insertBefore(t, s);
     })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
 
-    fbq("init", "1700313718073372");
+    fbq("init", "1772317504145361");
     fbq("track", "PageView");
 
-    // 🔒 evita duplicação
-    if (!window.purchaseFired) {
-      window.purchaseFired = true;
+    const eventId = "PURCHASE_" + Date.now();
 
-      fbq("track", "Purchase", {
-        value: 24.90,
-        currency: "BRL",
-        event_id: "PURCHASE_" + Date.now()
-      });
-    }
+    fbq("track", "Purchase", {
+      value: 24.90,
+      currency: "BRL",
+      event_id: eventId
+    });
   </script>
 
   <noscript>
     <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1700313718073372&ev=PageView&noscript=1"/>
+      src="https://www.facebook.com/tr?id=1772317504145361&ev=PageView&noscript=1" />
   </noscript>
 </head>
 

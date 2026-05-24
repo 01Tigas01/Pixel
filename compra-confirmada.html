@@ -1,51 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cadastro Ativo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro Ativo</title>
 
-  <!-- Meta Pixel -->
-  <script>
-    !(function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = "2.0";
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+<script>
+!(function (f, b, e, v, n, t, s) {
+if (f.fbq) return;
+n = f.fbq = function () {
+n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+};
+if (!f._fbq) f._fbq = n;
+n.push = n;
+n.loaded = !0;
+n.version = "2.0";
+n.queue = [];
+t = b.createElement(e);
+t.async = !0;
+t.src = v;
+s = b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t, s);
+})(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
 
-    fbq("init", "1678683196599311");
-    fbq("track", "PageView");
+fbq("init", "4290454394538029");
+fbq("track", "PageView");
 
-    if (!window.purchaseFired) {
-      window.purchaseFired = true;
+if (!window.purchaseFired) {
+window.purchaseFired = true;
 
-      fbq("track", "Purchase", {
-        value: 24.90,
-        currency: "BRL",
-        event_id: "PURCHASE_" + Date.now()
-      });
-    }
-  </script>
+fbq("track", "Purchase", {
+value: 24.90,
+currency: "BRL",
+event_id: "PURCHASE_" + Date.now()
+});
+}
+</script>
 
-  <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1678683196599311&ev=PageView&noscript=1"/>
-  </noscript>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4290454394538029&ev=PageView&noscript=1"/>
+</noscript>
+
+<style>
+body{
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial,sans-serif;
+color:#fff;
+}
+
+.card{
+background:#111;
+padding:40px;
+border-radius:20px;
+text-align:center;
+max-width:400px;
+width:100%;
+border:1px solid #222;
+}
+
+h1{
+color:#00ff40;
+margin-bottom:15px;
+}
+</style>
 </head>
 
 <body>
-  <h1>CADASTRO ATIVO</h1>
-  <p>Retorne ao WhatsApp, tudo completo ✅</p>
+<div class="card">
+<h1>CADASTRO ATIVO</h1>
+<p>Retorne ao WhatsApp, tudo completo ✅</p>
+</div>
 </body>
 </html>

@@ -1,54 +1,139 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta name="facebook-domain-verification" content="xnk4oqs8695uys1i0hzmnrvcjnvwzu" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ativar Cadastro — CTECHPLAY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ativar Cadastro</title>
 
-  <!-- Meta Pixel -->
-  <script>
-    !(function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = "2.0";
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
-    fbq("init", "1678683196599311");
-    fbq("track", "PageView");
-  </script>
+body{
+background:#000;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+color:#fff;
+}
 
-  <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1678683196599311&ev=PageView&noscript=1"/>
-  </noscript>
+.card{
+width:100%;
+max-width:420px;
+background:#111;
+padding:30px;
+border-radius:20px;
+border:1px solid #222;
+}
+
+.logo{
+text-align:center;
+font-size:32px;
+font-weight:bold;
+color:#00ff40;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+color:#aaa;
+margin-bottom:25px;
+}
+
+.progress{
+height:18px;
+background:#222;
+border-radius:30px;
+overflow:hidden;
+margin-bottom:25px;
+}
+
+.progress-fill{
+width:79%;
+height:100%;
+background:#00ff40;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+
+input{
+padding:14px;
+border:none;
+border-radius:10px;
+background:#1c1c1c;
+color:#fff;
+}
+
+button{
+padding:15px;
+border:none;
+border-radius:10px;
+background:#00ff40;
+font-weight:bold;
+cursor:pointer;
+}
+</style>
+
+<script>
+!(function (f, b, e, v, n, t, s) {
+if (f.fbq) return;
+n = f.fbq = function () {
+n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+};
+if (!f._fbq) f._fbq = n;
+n.push = n;
+n.loaded = !0;
+n.version = "2.0";
+n.queue = [];
+t = b.createElement(e);
+t.async = !0;
+t.src = v;
+s = b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t, s);
+})(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+
+fbq("init", "4290454394538029");
+fbq("track", "PageView");
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4290454394538029&ev=PageView&noscript=1"/>
+</noscript>
 </head>
 
 <body>
-  <h1>ATIVAR CADASTRO</h1>
+<div class="card">
+<div class="logo">CTECHPLAY</div>
+<div class="subtitle">Ative seu cadastro para continuar</div>
 
-  <form action="compra-confirmada.html">
-    <input type="text" placeholder="Nome" required>
-    <input type="email" placeholder="Email" required>
-    <input type="tel" placeholder="WhatsApp" required>
-    <button id="btn">ATIVAR CADASTRO</button>
-  </form>
+<div class="progress">
+<div class="progress-fill"></div>
+</div>
 
-  <script>
-    document.getElementById("btn").addEventListener("click", function () {
-      fbq("track", "InitiateCheckout");
-    });
-  </script>
+<form action="compra-confirmada.html">
+<input type="text" placeholder="Digite seu nome" required>
+<input type="email" placeholder="Digite seu email" required>
+<input type="tel" placeholder="Digite seu WhatsApp" required>
+<button id="btn">ATIVAR CADASTRO</button>
+</form>
+</div>
+
+<script>
+document.getElementById("btn").addEventListener("click", function () {
+fbq("track", "InitiateCheckout");
+});
+</script>
 </body>
 </html>

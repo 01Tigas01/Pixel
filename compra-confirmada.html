@@ -29,16 +29,19 @@ fbq("init", "985415594133843");
 
 fbq("track", "PageView");
 
-if (!window.purchaseFired) {
-window.purchaseFired = true;
+const purchaseKey = "ctechplay_purchase_sent";
 
-fbq("track", "Purchase", {
-value: 24.90,
-currency: "BRL",
-event_id: "PURCHASE_" + Date.now()
-});
+if (!sessionStorage.getItem(purchaseKey)) {
+  sessionStorage.setItem(purchaseKey, "1");
+
+  fbq("track", "Purchase", {
+    value: 24.90,
+    currency: "BRL",
+    event_id: "PURCHASE_" + Date.now()
+  });
 }
 </script>
+
 
 <style>
 body{

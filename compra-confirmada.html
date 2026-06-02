@@ -6,42 +6,43 @@
 <title>Cadastro Ativo</title>
 
 <script>
-!(function (f, b, e, v, n, t, s) {
-if (f.fbq) return;
-n = f.fbq = function () {
-n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+!(function(f,b,e,v,n,t,s){
+if(f.fbq)return;
+n=f.fbq=function(){
+n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments);
 };
-if (!f._fbq) f._fbq = n;
-n.push = n;
-n.loaded = !0;
-n.version = "2.0";
-n.queue = [];
-t = b.createElement(e);
-t.async = !0;
-t.src = v;
-s = b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t, s);
-})(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version="2.0";
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s);
+})(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
 
-fbq("init", "2043521586584610");
-fbq("init", "1500242607604835");
-fbq("init", "985415594133843");
+fbq("init","1041880658501746");
+fbq("init","1500242607604835");
+fbq("init","985415594133843");
 
-fbq("track", "PageView");
+fbq("track","PageView");
 
 const purchaseKey = "ctechplay_purchase_sent";
 
 if (!sessionStorage.getItem(purchaseKey)) {
-  sessionStorage.setItem(purchaseKey, "1");
 
-  fbq("track", "Purchase", {
-    value: 24.90,
-    currency: "BRL",
-    event_id: "PURCHASE_" + Date.now()
-  });
+sessionStorage.setItem(purchaseKey, "1");
+
+fbq("track","Purchase",{
+value:24.90,
+currency:"BRL",
+event_id:"PURCHASE_"+Date.now()
+});
+
 }
 </script>
-
 
 <style>
 body{
